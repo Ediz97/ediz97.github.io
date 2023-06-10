@@ -1,0 +1,116 @@
+<!-- Welcome page -->
+<div class="container h-full mx-auto flex justify-center items-center">
+	<div class="space-y-5 text-center justify-center">
+		<h1 class="h1">Hey, I'm Ediz!</h1>
+		<p>Scroll down to learn more about me.</p>
+		<br>
+		<div class="flex justify-center">
+			<svg class="animate-bounce hover:fill-primary-300" fill="currentColor" width="60" height="60" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 12c0-6.623-5.377-12-12-12s-12 5.377-12 12 5.377 12 12 12 12-5.377 12-12zm-1 0c0-6.071-4.929-11-11-11s-11 4.929-11 11 4.929 11 11 11 11-4.929 11-11zm-11.5 4.828l-3.763-4.608-.737.679 5 6.101 5-6.112-.753-.666-3.747 4.604v-11.826h-1v11.828z"/></svg>
+		</div>
+	</div>
+</div>
+
+<!-- About me -->
+<div class="container h-full mx-auto flex items-center justify-around">
+	<div class="card p-4 justify-center items-center flex flex-row w-5/12">
+		<div class="min-w-[15rem]">
+			<img alt="Picture of me" src="/edizportrait.jpg" class="pointer-events-none select-none">
+			<a href="https://meiserloh.github.io" target="_blank" class="text-gray-400 text-xs pt-1 hover:underline">&copy; Matthias Eiserloh</a>
+		</div>
+		<div>
+			<p class="px-10">
+				Nice to meet you! My name is Ediz and I'm 25 years old.
+				Aiming to become a skilled full-stack developer,
+				I started learning to code in August 2022 and have developed a passion for it ever since.
+				In my free time, I like meeting my friends, playing video games and traveling.
+			</p>
+		</div>
+	</div>
+	<div class="w-5/12">
+		<div class="flex flex-row justify-evenly my-10">
+			<div class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110">
+				<img class="w-16 h-16 pt-2" alt="HTML" src="/HTML5_logo_and_wordmark.svg">
+				<p class="pb-2">HTML</p>
+			</div>
+			<div class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110">
+				<img class="w-16 h-16 pt-2" alt="CSS" src="/CSS3_logo_and_wordmark.svg">
+				<p class="pb-2">CSS</p>
+			</div>
+		</div>
+		<div class="flex flex-row justify-between my-10">
+			<div class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110">
+				<img class="w-16 h-16 pt-2" alt="Svelte" src="/Svelte_Logo.svg">
+				<p class="pb-2">Svelte</p>
+			</div>
+			<div class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110">
+				<img class="w-16 h-16 pt-2" alt="Git" src="/Git_icon.svg">
+				<p class="pb-2">Git</p>
+			</div>
+		</div>
+		<div class="flex flex-row justify-evenly my-10">
+			<div class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110">
+				<img class="w-16 h-16 pt-2" alt="JavaScript" src="/Unofficial_JavaScript_logo_2.svg">
+				<p class="pb-2">JavaScript</p>
+			</div>
+			<div class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110">
+				<img class="w-16 h-16 pt-2" alt="Java" src="/Java_cup.svg">
+				<p class="pb-2">Java</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- TuffPass -->
+<div class="h-full max-w-full" style="width: 100vw;">
+	<div class="flex flex-row h-full justify-between items-center">
+		<div class="ml-20 mr-10">
+			<img alt="TuffPass" src="/tuffpass-screenshot.png" class="transition hover:scale-110">
+		</div>
+		<div class="mr-20 ml-10">
+			<h2 class="h2">TuffPass</h2>
+			<br>
+			<p>Trust no one, but your password. A desktop password manager, designed with customization in mind.</p>
+			<br>
+			<a class="h5 font-bold underline underline-offset-4 hover:text-primary-300" href="https://github.com/Ediz97/TuffPass" target="_blank">Learn more</a>
+		</div>
+	</div>
+</div>
+
+<!-- Minesweeper -->
+<div class="h-full max-w-full" style="width: 100vw;">
+	<div class="flex flex-row h-full justify-between items-center">
+		<div class="ml-20 mr-10">
+			<h2 class="h2">Minesweeper</h2>
+			<br>
+			<p>Anybody can be a minesweeper...once. Download my version of Minesweeper and pass some time every now and then!</p>
+			<br>
+			<a class="h5 font-bold underline underline-offset-4 hover:text-primary-300" href="https://github.com/Ediz97/Minesweeper" target="_blank">Learn more</a>
+		</div>
+		<div class="mr-20 ml-10">
+			<img alt="Minesweeper" src="/minesweeper-screenshot.png" class="transition hover:scale-110">
+		</div>
+
+	</div>
+</div>
+
+<!-- Digital Macro Pad -->
+<div class="h-full max-w-full" style="width: 100vw;">
+	<div class="flex flex-row h-full justify-between items-center">
+		<div class="ml-20 mr-10">
+			<img alt="Digital Macro Pad" src="/digital-macro-pad-screenshot.png" class="transition hover:scale-110">
+		</div>
+		<div class="mr-20 ml-10">
+			<h2 class="h2">Digital Macro Pad</h2>
+			<br>
+			<p>Make your everyday work easier by binding the commands and programs you use most to a button!</p>
+			<br>
+			<a class="h5 font-bold underline underline-offset-4 hover:text-primary-300"
+			   href="https://github.com/powercode-boys/digital-macro-pad" target="_blank">Learn more</a>
+		</div>
+	</div>
+</div>
+
+<!-- End -->
+<div class="container h-full mx-auto flex justify-center items-center">
+	Thank you for visiting!
+</div>
