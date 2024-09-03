@@ -1,13 +1,14 @@
 <script>
   import UserInterface from './lib/UserInterface.svelte';
   import DifficultySelection from "./lib/DifficultySelection.svelte";
+  import { base } from '$app/paths';
 
 </script>
 
 <main>
     <DifficultySelection/>
     <UserInterface/>
-    <img src="/bobomb.png" alt="A bomb.">
+    <img src="{base}/bobomb.png" alt="A bomb.">
 </main>
 
 <style>

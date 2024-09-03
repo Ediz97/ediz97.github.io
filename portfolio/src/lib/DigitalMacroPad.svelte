@@ -1,7 +1,11 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <div class="h-full max-w-full" style="width: 100vw;">
     <div class="flex flex-row h-full justify-between items-center">
         <div class="ml-20 mr-10">
-            <img alt="Digital Macro Pad" src="/digital-macro-pad-screenshot.png" class="transition hover:scale-110">
+            <img alt="Digital Macro Pad" src="{base}/digital-macro-pad-screenshot.png" class="transition hover:scale-110">
         </div>
         <div class="mr-20 ml-10">
             <h2 class="h2">Digital Macro Pad</h2>

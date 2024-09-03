@@ -1,3 +1,7 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <div class="h-full max-w-full" style="width: 100vw;">
     <div class="flex flex-row h-full justify-between items-center">
         <div class="ml-20 mr-10">
@@ -9,7 +13,7 @@
             <a class="h5 font-bold underline underline-offset-4 hover:text-primary-300 ml-10" href="https://github.com/Ediz97/Minesweeper" target="_blank">Learn more</a>
         </div>
         <div class="mr-20 ml-10">
-            <img on:click={() => window.open("minesweeper")} alt="Minesweeper" src="/minesweeper-screenshot.png" class="transition hover:scale-110 cursor-pointer">
+            <img on:click={() => window.open("minesweeper")} alt="Minesweeper" src="{base}/minesweeper-screenshot.png" class="transition hover:scale-110 cursor-pointer">
         </div>
 
     </div>
