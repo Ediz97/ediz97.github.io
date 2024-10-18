@@ -15,6 +15,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Portfolio</title>
+</svelte:head>
+
 <Fullpage scrollDuration={500}>
 	<FullpageSection>
 		<div class="container h-full mx-auto flex justify-center items-center">
