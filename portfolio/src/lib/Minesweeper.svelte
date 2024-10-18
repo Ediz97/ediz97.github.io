@@ -3,8 +3,8 @@
 </script>
 
 <div class="h-full max-w-full" style="width: 100vw;">
-    <div class="flex flex-row h-full justify-between items-center">
-        <div class="ml-20 mr-10">
+    <div class="flex md:flex-row flex-col h-full md:justify-between justify-evenly items-center">
+        <div class="md:ml-20 md:mr-10 ml-5 mr-5">
             <h2 class="h2">Minesweeper</h2>
             <br>
             <p>Anybody can be a minesweeper...once. Play my version of Minesweeper and pass some time every now and then!</p>
@@ -12,7 +12,7 @@
             <a class="h5 font-bold underline underline-offset-4 hover:text-primary-300" href="minesweeper" target="_blank">Play</a>
             <a class="h5 font-bold underline underline-offset-4 hover:text-primary-300 ml-10" href="https://github.com/Ediz97/Minesweeper" target="_blank">Learn more</a>
         </div>
-        <div class="mr-20 ml-10">
+        <div class="md:mr-20 md:ml-10 ml-5 mr-5">
             <img on:click={() => window.open("minesweeper")} alt="Minesweeper" src="{base}/minesweeper-screenshot.png" class="transition hover:scale-110 cursor-pointer">
         </div>
 

@@ -2,12 +2,12 @@
 	import { base } from '$app/paths';
 </script>
 
-<div class="container h-full mx-auto flex items-center justify-around">
-	<div class="card p-4 justify-center items-center flex flex-row w-5/12">
-		<div class="min-w-[15rem]">
-			<img alt="Picture of me" src="{base}/edizportrait.jpg" class="pointer-events-none select-none" />
-		</div>
+<div class="container h-full mx-auto flex flex-col xl:flex-row items-center justify-around">
+	<div class="card p-4 justify-center items-center flex md:flex-row flex-col md:w-[600px] w-80">
 		<div>
+			<img alt="Picture of me" src="{base}/edizportrait.jpg" class="pointer-events-none select-none min-w-[240px]" />
+		</div>
+		<div class="mt-2 md:mt-0">
 			<p class="px-10">
 				Hello!<br /><br /> I'm Ediz and I was born in 1997 in Germany. Aiming to become a skilled full-stack
 				developer, I started my journey in 2022 and have developed a passion for it ever since. Other
@@ -15,7 +15,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="w-5/12">
+	<div class="md:w-[600px] md:visible invisible absolute md:relative">
 		<div class="flex flex-row justify-evenly my-10">
 			<div
 				class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110"
@@ -40,7 +40,7 @@
 			<div
 				class="flex flex-col w-40 items-center border-4 rounded-2xl border-primary-200 transition hover:scale-110"
 			>
-				<img class="w-16 h-16 pt-2" alt="CSS" src="{base}/CSS3_logo_and_wordmark.svg" />
+				<img class="w-16 h-16 pt-2" alt="CSS" src="{base}/Angular_full_color_logo.svg" />
 				<p class="pb-2">Angular</p>
 			</div>
 		</div>

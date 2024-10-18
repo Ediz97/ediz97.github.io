@@ -1,4 +1,4 @@
-<div class="container h-full mx-auto flex justify-center items-center text-center flex-col">
+<div class="container h-full mx-14 flex justify-center items-center text-center flex-col">
     <div>
         <p>
             Thank you for visiting!<br>
