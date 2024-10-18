@@ -9,6 +9,7 @@ export const amountRemainingTiles = writable();
 export const gameStarted = writable(false);
 export const countNearbyBombs = writable(false);
 export const markedTiles = writable([]);
+export const difficultyLevel = writable('');
 
 let neighboursIndexes = [];
 let leftNeighboursIndexes = [];

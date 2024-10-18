@@ -5,23 +5,17 @@
 
 </script>
 
+<svelte:head>
+    <link rel="icon" type="image/x-icon" href="{base}/bobomb.png">
+    <title>Minesweeper</title>
+</svelte:head>
+
 <main>
     <DifficultySelection/>
     <UserInterface/>
-    <img src="{base}/bobomb.png" alt="A bomb.">
 </main>
 
 <style>
-    img {
-        position: fixed;
-        height: 339px;
-        width: 292px;
-        bottom: 30px;
-        right: 15px;
-        pointer-events: none;
-        user-select: none;
-    }
-
     main {
         background-image: linear-gradient(to right, #434343 0%, black 100%);
         margin: 0;

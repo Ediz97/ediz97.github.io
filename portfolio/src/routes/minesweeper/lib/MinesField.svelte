@@ -1,6 +1,6 @@
 <script>
   import Cells from './Cells.svelte';
-  import { bombCount, countNearbyBombs, gameStarted, neighbours, tilesPerRow, totalTiles } from './stores.js';
+  import { bombCount, countNearbyBombs, gameStarted, neighbours, tilesPerRow, totalTiles, difficultyLevel } from './stores.js';
   import { createEventDispatcher } from 'svelte';
 
   let bombPlacements = [];
@@ -45,7 +45,8 @@
     });
     if (!bombsDetonated) {
       bombsDetonated = true;
-      setTimeout(() => alert('Game over! Please reload the page.'), 10);
+      let highscore = localStorage.getItem($difficultyLevel);
+      setTimeout(() => alert(`Game over!${highscore === null ? '' : `\nHighscore: ${highscore} seconds!`}`), 10);
     }
   }
 

@@ -3,7 +3,7 @@
   import Timer from './Timer.svelte';
   import MinesField from './MinesField.svelte';
   import ResetButton from './ResetButton.svelte';
-  import { amountRemainingTiles, timer, gameStarted } from "./stores.js";
+  import { amountRemainingTiles, timer, gameStarted, difficultyLevel } from "./stores.js";
 
   let userInterface = 'hidden';
   let stopwatchID;
@@ -15,7 +15,8 @@
 
   $: if ($amountRemainingTiles === 0) {
     clearInterval(stopwatchID);
-    setTimeout(() => alert('You won!'), 10);
+    let highscore = getHighscore();
+    setTimeout(() => alert(`You won!\nHighscore: ${highscore} seconds!`), 10);
   }
 
   function updateTimer(event) {
@@ -26,6 +27,15 @@
     else if (event.detail.timer === 'stop') {
       clearInterval(stopwatchID);
     }
+  }
+
+  function getHighscore() {
+    let currentHighscore = localStorage.getItem($difficultyLevel);
+    if (+`${currentHighscore}` > $timer || currentHighscore === null) {
+      localStorage.setItem($difficultyLevel, $timer.toString());
+      return $timer;
+    }
+    return currentHighscore;
   }
 
 </script>

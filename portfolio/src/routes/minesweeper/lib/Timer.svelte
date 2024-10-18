@@ -10,7 +10,7 @@
 <style>
     #Timer {
         display: flex;
-        width: 150px;
+        min-width: 150px;
         height: 50px;
         font-size: 35px;
         justify-content: flex-start;

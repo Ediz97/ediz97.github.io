@@ -1,13 +1,14 @@
 <script>
-  import { tilesPerRow, totalTiles, bombCount, flagCount, amountRemainingTiles, gameStarted, markedTiles } from "./stores.js";
+  import { tilesPerRow, totalTiles, bombCount, flagCount, amountRemainingTiles, gameStarted, markedTiles, difficultyLevel } from "./stores.js";
 
   let difficultySelection = 'visible';
 
-  function setDifficulty(selectedTilesPerRow, selectedTotalTiles, selectedBombsAndFlags) {
+  function setDifficulty(selectedTilesPerRow, selectedTotalTiles, selectedBombsAndFlags, difficulty) {
     tilesPerRow.set(selectedTilesPerRow);
     totalTiles.set(selectedTotalTiles);
     flagCount.set(selectedBombsAndFlags);
     bombCount.set(selectedBombsAndFlags);
+    difficultyLevel.set(difficulty);
     amountRemainingTiles.set(selectedTotalTiles - selectedBombsAndFlags);
     markedTiles.set(Array(selectedTotalTiles).fill(false));
     gameStarted.set(true);
@@ -21,9 +22,9 @@
         <h1>Select a difficulty level</h1>
     </div>
     <div id="buttons">
-        <button id="easy" on:click="{() => setDifficulty(9, 81, 10)}">Easy</button>
-        <button id="medium" on:click="{() => setDifficulty(19, 266, 40)}">Medium</button>
-        <button id="hard" on:click="{() => setDifficulty(27, 486, 99)}">Hard</button>
+        <button id="easy" on:click="{() => setDifficulty(9, 81, 10, 'easy')}">Easy</button>
+        <button id="medium" on:click="{() => setDifficulty(19, 266, 40, 'medium')}">Medium</button>
+        <button id="hard" on:click="{() => setDifficulty(27, 486, 99, 'hard')}">Hard</button>
     </div>
 </div>
 
